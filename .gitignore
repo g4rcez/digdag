@@ -1,0 +1,7 @@
+/.digdag-wrapper
+.digdag
+*.pyc
+assets/screenshot.png
+./PayloadsAllTheThings
+./assets/
+./wordlists/rockyou.txt

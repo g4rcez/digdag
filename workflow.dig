@@ -1,0 +1,23 @@
+# timezone tool: https://momentjs.com/
+timezone: America/Sao_Paulo
+
++setup:
+  sh>: bash ./scripts/init.sh ${workflow}
+
+# operators - https://docs.digdag.io/operators.html
++iterators:
+  for_each>:
+    names: [init]
+  _do:
+    sh>: scripts/intro.sh ${names}
+  _parallel: false
+  
++print-screen:
+  sh>: deno run --allow-read --allow-env --allow-sys --allow-write --allow-run --allow-net ./scripts/browser.ts
+  
++recon:
+  sh>: nmap garcez.dev -T4 -o ${workflow}/nmap.txt
+
++teardown:
+  sh>: echo finish ${session_time}
+

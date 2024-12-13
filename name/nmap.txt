@@ -1,0 +1,9 @@
+# Nmap 7.95 scan initiated Wed Dec 11 22:51:57 2024 as: nmap -T4 -o name/nmap.txt garcez.dev
+Nmap scan report for garcez.dev (76.76.21.21)
+Host is up (0.0084s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Wed Dec 11 22:52:40 2024 -- 1 IP address (1 host up) scanned in 42.30 seconds

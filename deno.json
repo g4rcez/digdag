@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "payloads": "deno run --allow-write --allow-read --allow-sys scripts/fetch-payload-all-the-things.ts ./PayloadsAllTheThings/**/*.md",
+    "fetch-payloads": "cd ./PayloadsAllTheThings; git pull origin master"
+  }
+}
